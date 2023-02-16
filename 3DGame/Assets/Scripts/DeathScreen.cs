@@ -1,0 +1,18 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class DeathScreen : MonoBehaviour
+{
+    public void BackToMain()
+    {
+        SceneManager.LoadScene("MainMenu");
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void Quit_Game()
+    {
+        Application.Quit();
+    }
+}
