@@ -14,4 +14,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DeathScene.unity
     guid: 59af9fe8820ccc3439ff8552e8fdd782
+  - enabled: 1
+    path: Assets/Scenes/TimeRanOut.unity
+    guid: 6f2e0b82020a2e641ab049780f9d51a7
+  - enabled: 1
+    path: Assets/Scenes/KilledBySlime.unity
+    guid: 85674ca50466b7546a26e6ba1adac982
+  - enabled: 1
+    path: Assets/Scenes/FinishGame.unity
+    guid: 2460e3d7846d49443a9ce5d93c811eb7
+  - enabled: 1
+    path: Assets/Scenes/KilledBySpikes.unity
+    guid: d21915837423fad4f86109becac8290a
   m_configObjects: {}
