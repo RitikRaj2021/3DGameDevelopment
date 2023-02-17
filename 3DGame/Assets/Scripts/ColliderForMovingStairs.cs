@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class ColliderForMovingStairs : MonoBehaviour
 {
-    //[SerializeField] GameObject[] checkpoint;
+    [SerializeField] List<GameObject> checkpoint;
+    [SerializeField] GameObject player;
+    [SerializeField] float dead;
+    [SerializeField] Vector3 vectorPoint;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +25,9 @@ public class ColliderForMovingStairs : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            //transform.position = Vector3()
+
+
+            //transform.position(-10.49833, 5.14, -0.7391891);
         }
         Debug.Log("collison");
     }

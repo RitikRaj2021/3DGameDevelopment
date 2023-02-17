@@ -10948,7 +10948,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 602727257}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.65, y: -2.43, z: -0.36}
+  m_LocalPosition: {x: 12.65, y: -4.11, z: -0.36}
   m_LocalScale: {x: 1.7470921, y: 1, z: 35.40702}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10967,7 +10967,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 641feddb64c283e44a81b385118c2c98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkpoint: []
+  checkpoint:
+  - {fileID: 1449214072}
+  player: {fileID: 1391655856}
+  dead: 0
+  vectorPoint: {x: 0, y: 0, z: 0}
 --- !u!65 &602727260
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28103,7 +28107,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1391655856}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -16.1, y: 4.6, z: -7.7}
+  m_LocalPosition: {x: 48.2, y: 18.3, z: 74.8}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -28682,7 +28686,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1449214072}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.498325, y: 1.3156319, z: -0.73918915}
+  m_LocalPosition: {x: -10.498325, y: 5.14, z: -0.73918915}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
