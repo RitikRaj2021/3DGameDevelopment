@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     float rotationY;
 
 
-    public Animator anim;
+    //public Animator anim;
 
 
     // player's jump speed

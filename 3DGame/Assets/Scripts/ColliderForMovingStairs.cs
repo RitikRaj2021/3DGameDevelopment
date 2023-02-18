@@ -4,31 +4,39 @@ using UnityEngine;
 
 public class ColliderForMovingStairs : MonoBehaviour
 {
-    [SerializeField] List<GameObject> checkpoint;
-    [SerializeField] GameObject player;
-    [SerializeField] float dead;
-    [SerializeField] Vector3 vectorPoint;
+
+    //[SerializeField] List<GameObject> checkpoint;
+    //[SerializeField] GameObject player;
+    //[SerializeField] float dead;
+    //[SerializeField] Vector3 vectorPoint;
 
     // Start is called before the first frame update
-    void Start()
+    private Vector3 respawnPosition;
+
+    private void Start()
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        // Set the initial respawn position to the object's current position
+        respawnPosition = transform.position;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.CompareTag("Player"))
         {
-
-
-            //transform.position(-10.49833, 5.14, -0.7391891);
+            // Set the player's position to the respawn point's position
+            other.transform.position = respawnPosition;
         }
-        Debug.Log("collison");
     }
+
+    /*
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            Debug.Log("Trigger entered!");
+            transform.Translate(new Vector3(37.48f, 5.14f, -0.7391891f));
+            Debug.Log("Player moved!");
+        }
+
+    }*/
 }
